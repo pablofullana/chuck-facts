@@ -1,16 +1,18 @@
 head
-  title Chuck Facts
   meta http-equiv="Content-Type" content="text/html; charset=utf-8"
-  link rel="stylesheet" href="/stylesheets/style.css"
+  title Chuck Facts
+  link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
   link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+  link rel="stylesheet" href="/stylesheets/style.css"
+  script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+
 
 body
-  table
-    tr
-      td.avatar-td style=("width:20%;" )
-        img.avatar src="/images/chuck.png"
-      td
-        p.description
-          i.fa.fa-quote-left style=("margin-right:1em;" )
-          = @fact
-          i.fa.fa-quote-right style=("margin-left:1em;" )
+  .container.vcenter
+    .row
+      img.avatar src="/images/chuck.png"
+    .row
+      p.fact
+        i.fa.fa-quote-left style=("margin-right:1em;" )
+        = @fact
+        i.fa.fa-quote-right style=("margin-left:1em;" )
